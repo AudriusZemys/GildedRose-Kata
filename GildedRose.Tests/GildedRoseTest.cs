@@ -32,7 +32,6 @@ namespace GildedRose.Tests
                     SellIn = 5,
                     Quality = 49
                 },
-				// this conjured item does not work properly yet
 				new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
             };
 
@@ -77,7 +76,7 @@ namespace GildedRose.Tests
 
             gildedRose.Items[7].Name.Should().Be(ItemNames.ConjuredCake);
             gildedRose.Items[7].SellIn.Should().Be(2);
-            gildedRose.Items[7].Quality.Should().Be(5);
+            gildedRose.Items[7].Quality.Should().Be(4);
         }
     }
 }
