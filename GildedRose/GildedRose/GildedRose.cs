@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace GildedRose
 {
     public class GildedRose
     {
-        IList<Item> Items;
-        public GildedRose(IList<Item> Items)
+        public GildedRose(IList<Item> items)
         {
-            this.Items = Items;
+            Items = items;
         }
+
+        public IList<Item> Items { get; set; }
 
         public void UpdateQuality()
         {
