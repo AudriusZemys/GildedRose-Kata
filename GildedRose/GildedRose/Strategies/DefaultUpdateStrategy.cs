@@ -1,4 +1,5 @@
-﻿using GildedRose.Strategies.Interfaces;
+﻿using GildedRose.Helpers;
+using GildedRose.Strategies.Interfaces;
 
 namespace GildedRose.Strategies
 {
@@ -28,6 +29,8 @@ namespace GildedRose.Strategies
                     item.Quality -= ReductionValue;
                 }
             }
+
+            ItemQualityHelper.EnsureQualityIsNotNegative(item);
         }
     }
 }
